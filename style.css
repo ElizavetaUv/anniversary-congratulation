@@ -1,0 +1,48 @@
+.container {
+  max-width: 600px;
+  margin: 25vh auto;
+  padding: 50px;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 24px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+span {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.heart {
+  position: fixed;
+  z-index: 999;
+  width: 77px;
+  height: 72px;
+  background-image: url("heart.png");
+  background-size: cover;
+  animation: heart 2s ease-out infinite;
+}
